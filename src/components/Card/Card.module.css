@@ -1,0 +1,70 @@
+.divGral {    
+    background-color: rgb(51, 41, 55);
+    margin: 50px;
+    font-size: small;
+    border-radius: 10px;
+    border: 2.5px;
+    color: rgb(215, 170, 250);
+    border-style:outset;
+    border-color: rgb(238, 209, 248);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    
+}
+
+.boton{
+    border-radius: 8px;
+    background-color: rgb(247, 6, 155);
+    border-color: rgb(245, 247, 240);
+    color: rgb(65, 6, 131);
+    margin-left: 87%;
+    padding: 4px 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.boton:hover{
+    background-color: rgb(65, 6, 131);
+    color: rgb(247, 6, 155);
+    
+}
+
+.container{
+    position: relative;
+}
+
+.titulo{
+    position: absolute;
+    justify-content: flex-start;
+    background-color:  rgb(51, 41, 55);
+    color: rgb(27, 227, 67);
+    opacity: 0.7;
+    background-size: small;
+    margin-top: 230px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 12px;
+    border-radius: 5px;
+    /*display: flex;
+    background-color: rgb(247, 6, 155);
+    color: rgb(65, 6, 131);
+    opacity: 0.9;
+    border-radius: 10px;
+    margin: 5%;
+    margin-top: 0%;*/
+    /*border: outset;
+    border-color: rgb(58, 56, 60);*/
+}
+
+.specieGender{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+

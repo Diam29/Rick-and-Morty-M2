@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Shadows+Into+Light+Two&display=swap');
+
+
+
+
+.barra {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(209, 24, 147, 0.8);
+    border-radius: 25px;
+    padding: 1px 5px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.bttn {
+    font-family: 'Shadows Into Light Two';
+    background-color: rgb(51, 41, 55);
+    color:rgb(215, 170, 250);
+    border: 0px;
+    border-radius: 10px;
+    font-weight:bolder;
+    font-size:larger;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 25px 0px;
+    margin-left: 23px;
+    border: outset;
+    border-color:rgb(191, 176, 213);
+}
+
+.bttn:hover{
+    
+    background-color: rgb(215, 170, 250);
+    color: rgb(51, 41, 55);
+    border: outset;
+    border-color: rgb(132, 100, 125);
+
+}
+
+.links {
+    text-decoration: none;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(51, 41, 55);
+    padding: 10px;
+    margin: 0px 25px;
+}
+
+.links:hover{
+    font-size: 36;
+    color: white;
+}
