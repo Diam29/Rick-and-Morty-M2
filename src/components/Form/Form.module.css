@@ -1,168 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Shadows+Into+Light+Two&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+.container {
+    font-weight: normal;
+    font-family: 'Shadows Into Light Two', cursive;
+}
 
-.container{
+.container form{
+    background-color: rgba(64, 236, 48, 0.75);
+    box-shadow: 0 5px 15px 8px rgb(22, 255, 0);
+    width: 98%;
+    max-width: 550px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    
+}
+
+.container form label{
+    display: block;
+    color: rgba(41, 49, 41);
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.container input{
+    background: transparent;
+    background-color: rgb(22, 255, 0, 0.05);
+    border:none;
+    border-bottom: 2px solid rgb(83, 110, 83);
+    outline: none;
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 20px;
-    background: rgb(22, 255, 0, 0.7);
-    width: 390px;
-    height: 500px;
-    padding: 10px 10px;
-    max-width: 600px;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px 4px rgb(22, 255, 0);
-    justify-content: space-between;
-    text-align: center;
-    /*display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    /*flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(171, 110, 171, 0.7);
-    width: 600px;
-    height: 400px;
-    margin: 5rem 20rem;
-    border-radius: 15px;*/
-    
+    padding: 5px;
+    width: 70%;
+    margin: 25px;
+    color: rgb(54, 61, 54);
 }
 
-.name{
-    display: grid;
-    
-    font-family: 'Shadows Into Light Two', cursive;
-    /*justify-content: space-around;*/
-    margin: 20px 0px 0px 0px;
-    align-items: first baseline;
+.container input:focus{
+    border-bottom: 2px solid rgba(41, 49, 41);
 }
 
-
-
-
-.label{
-    background-color: rgba(236, 243, 235, 0.7) ;
-    justify-content: center;
-    text-align:left;
-    border: none;
-    background: hsl(0%, 100%);
-    box-shadow: 0 0 2em hsl(231deg, 62%, 94%);
-    padding: 0.5rem 6rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: hsl(0deg, 0%, 30%);
-    margin-top: 2.5em;
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: medium;
-    margin-bottom: 2rem;
-    
-
-    /*position: absolute;*/
-    /*left: 13px;
-    color:aliceblue;
-    transition: all 0.25s ease;
-    -webkit-backface-visibility: hidden;
-    pointer-events: none;
-    font-size: 22px;*/
-    /*list-style: none;
-    padding: 0;
-    margin: 0 0 40px 0;
-    font-size: 25px;*/
-    /*display: block;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: xx-large;
-    margin-top: 30px;
-    padding: 0;*/
+.container input::placeholder{
+    color:rgb(83, 110, 83);
+    padding-left: 50px;
+    font-size: 30px;
 }
 
-.divLogo{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 10px 0;
+.container input:focus::placeholder{
+    color: rgba(41, 49, 41);
 }
+
 
 .logo{
-        color: rgba(121, 147, 140, 0.5);
-        display: flex;
-        position: absolute;
-        top: -129px;
-        left: 503px;
-        font-size: 25px;
-        height: 100%;
-        
-    }
-
-
-
-.label hover{
-    background-color:0 0 2em rgba(95, 238, 82, 0.7);
-    border: none;
-    background: hsl(0%, 100%);
-    box-shadow: 0 0 2em rgba(95, 238, 82, 0.7);
-    outline: none;
-    border:none;
-    place-items: none;
+    color: rgb(101, 130, 101);
+    background-position: 15px;
+    font-size: 30px;
+    margin-left: auto;
 }
 
 .btt{
     font-family: 'Shadows Into Light Two';
     background-color: rgb(51, 41, 55);
     color:rgb(215, 170, 250);
-    border: 0px;
-    border-radius: 10px;
-    font-weight:bolder;
-    font-size:larger;
-    padding: 2px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 5px 0px;
-    margin-right: 23px;
+    outline: none;
     border: outset;
+    border-radius: 10px;
     border-color:rgb(191, 176, 213);
+    font-weight:bolder;
+    font-size:20px;
+    padding: 8px 15px;
+    width: 100%;
+    margin-top: 35px;  
+    cursor: pointer;
 }
 
 .btt:hover{
-    transition: all 0.25 ease;
     background-color: rgb(215, 170, 250);
     color: rgb(51, 41, 55);
-    border: outset;
+    outline: none;
     border-color: rgb(132, 100, 125);
 }
 
-.warning{
-    color: red
-}
-
-.danger{
-    margin-top: 1px;
-    color:blue
-}
-
-/*.inputs{
-
-    
-    /*display: block;
-    justify-content: space-evenly;
-    text-align: center;
-    font-family: 'Shadows Into Light Two', cursive;
-    background-color: #e61f1f;
-    color: rgb(51, 41, 55);
-    border: 0px;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: medium;
-}*/
-
-.parraf{
-    display: block;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+.container form p{
+    color: rgb(216, 4, 89);
+    font-size: 15px;
 }
 

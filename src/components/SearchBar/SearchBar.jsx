@@ -2,24 +2,28 @@ import { useState } from 'react';
 import styles from './SearchBar.module.css'
 
 
-export default function SearchBar(props) {
+export default function SearchBar({onSearch}) {
 
-   const [char, setChar] = useState(0);
+   const [char, setChar] = useState('');
 
    const handleSearch = (event) =>{
-      let {value} = event.target;
-      setChar(value);
+      
+      setChar(event.target.value);
    };
+
+   const onSubmit = (e)=> {
+      e.preventDefault();
+      setChar('');
+   }
 
 
 
    return (
+      <form onSubmit={onSubmit}>
       <div>
-         <input className={styles.barra} type='search' onChange={handleSearch}/>
-      <button className={styles.botonBar} onClick={()=>props.onSearch(char)} >Agregar</button>
-      {/*<button className={styles.botonBar} onClick={props.random}>
-      Random Character
-      </button>*/}
+         <input className={styles.barra} type='search' value={char} onChange={handleSearch} placeholder='Ingresa un número'/>
+      <button className={styles.botonBar} onClick={()=>onSearch(char)} >Agregar</button>
       </div>
+      </form>
    );
 }

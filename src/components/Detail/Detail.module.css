@@ -5,34 +5,44 @@
 
 
 .items {
+    /*background-color: rgb(51, 41, 55, 0.7);*/
+    background-color: rgb(206, 214, 205, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px 8px rgb(206, 214, 205);
+    padding: 20px;
     float: left;
     text-align:start;
     font-size:2rem;
     font-family: 'Shadows Into Light Two', cursive;
     font-weight: bolder;
-    color: aliceblue;
-    /*margin: center;*/
-    margin-top: 5%;
+    color: rgb(51, 41, 55);
+    margin-top: 9%;
     margin-left: 25%;
 }
 
 
 
-.imagen{
+.imagen img{
     float: right;
     margin: center;
     margin-top: 7%;
-    margin-right: 20%;
-}
-
-.imagen img{
+    margin-right: 10%;
+    box-shadow: 0 5px 15px 8px rgb(206, 214, 205);
     border-radius: 30px;
 }
 
+
+
 .btt{
-    display: inline-block;
-    justify-content:right;
-    margin-top: 430px;
+    position:fixed;
+    /*display: inline-block;*/
+    justify-content:center;
+    /*margin-top: 80px;
+    margin-left: 100px;*/
+    
+    margin-top: 420px;
+    
+    
     font-family: 'Shadows Into Light Two', cursive;
     background-color: rgb(51, 41, 55);
     color:rgb(215, 170, 250);
@@ -43,7 +53,6 @@
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    /*margin: 25px 0px;*/
     border: outset;
     border-color:rgb(191, 176, 213);
 }

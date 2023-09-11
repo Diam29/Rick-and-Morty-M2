@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import styles from './Form.module.css';
 import validation from './validation.js';
-import { FaGithubAlt, FaUserAlt, FaUnlockAlt, FaUserCheck, FaUserCircle } from 'react-icons/fa'
+import {  FaUnlockAlt, FaUserCircle } from 'react-icons/fa'
 
 
 export default function Form(props) {
@@ -19,35 +19,48 @@ const [errors, setErrors] = useState({
 
 
 const handleInputChange = (event)=>{
-    setUserData({...userData, [event.target.name]: event.target.value})
-    setErrors(validation(userData))
+    event.preventDefault();
+    setUserData({
+        ...userData, [event.target.name]: event.target.value})
+    setErrors(validation({
+        ...userData, [event.target.name]: event.target.value}))
 }
 
 const handleSubmint = (event) => {
     event.preventDefault();
+    setErrors(errors)
     props.login(userData)
+    
 }
 
     return(
-        <div>
-            <form className={styles.container} onSubmit={handleSubmint}>
-            <label className={styles.name}><b>Username: </b></label>
-            <div className={styles.divlogo}>
+        <div className={styles.container}>
+            <form className={styles.form} onSubmit={handleSubmint}>
+            <div className={styles.userPass}>
+            <label className={styles.label}><b>Username: </b></label>
             <FaUserCircle className={styles.logo}/>
-                {
                     <input 
                     type="text" 
                     name='username'
-                    
-                    className={styles.label } 
+                    className={styles.input} 
                     value={userData.username} 
-                    onChange={handleInputChange}/>}
+                    placeholder='Usuario'
+                    onChange={handleInputChange}/>
+                {errors.username && <p className={styles.error}><b>{errors.username}</b></p>}
             </div>
-                {errors.username && <p className={styles.warning}>{errors.username}</p>}
-            <label className={styles.name}><b>Password: </b></label>
-                <input className={styles.label} type="password" name='password' placeholder='Password' value={userData.password} onChange={handleInputChange}/>
-                {errors.password &&<p className={styles.warning}>{errors.password}</p>}
-            <button className={styles.btt}>LOGIN</button>
+            <div className={styles.userPass}>
+            <label className={styles.label}><b>Password: </b></label>
+            <FaUnlockAlt className={styles.logo}/>
+                <input 
+                className={styles.input} 
+                type="password" 
+                name='password' 
+                value={userData.password}
+                placeholder='Contraseña'
+                onChange={handleInputChange}/>
+                {errors.password && <p className={styles.error}><b>{errors.password}</b></p>}
+            </div>
+            <button type='submit' className={styles.btt}>LOGIN</button>
             </form>
         </div>
     );

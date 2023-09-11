@@ -14,12 +14,11 @@
     margin: 25px 0px;
     display: inline-table;
     justify-content: space-evenly;
-    margin-right: 23px;
     border: outset;
     border-color: rgb(130, 105, 140);
     font-size: larger;
     font-weight: bolder;
-    
+    margin-right: 5px;
 }
 
 .botonBar{
@@ -37,6 +36,7 @@
     margin-right: 23px;
     border: outset;
     border-color:rgb(191, 176, 213);
+    cursor: pointer;
 }
 
 .botonBar:hover{

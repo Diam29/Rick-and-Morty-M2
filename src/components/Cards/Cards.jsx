@@ -6,7 +6,7 @@ export default function Cards(props) {
 const { characters } = props;
 let i = 0;
 return (<div className={styles.Cards}>
-      {characters.length === 0 ? (<p style={{color: 'rgb(96, 158, 162)', marginTop: '150px', fontSize: '55px' }}>Podes  buscar  un  personaje</p>) : 
+      {characters.length === 0 ? (<p style={{color: 'rgb(118, 237, 138)', marginTop: '150px', fontSize: '35px' }}>BUSCA UN PERSONAJE</p>) : 
       (characters.map(cht=> (< Card 
       id={cht.id}
       name={cht.name} 

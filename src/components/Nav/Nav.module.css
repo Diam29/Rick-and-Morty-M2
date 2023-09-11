@@ -11,8 +11,10 @@
     background-color: rgb(209, 24, 147, 0.8);
     border-radius: 25px;
     padding: 1px 5px;
-    margin-bottom: 10px;
     margin-top: -10px;
+    /*max-width: 550px;*/
+    margin: auto;
+    width: auto;
 }
 
 .bttn {
@@ -24,13 +26,15 @@
     font-weight:bolder;
     font-size:larger;
     padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
     margin: 25px 0px;
     margin-left: 23px;
     border: outset;
     border-color:rgb(191, 176, 213);
+    cursor: pointer;
 }
+
 
 .bttn:hover{
     
@@ -44,11 +48,13 @@
 .links {
     text-decoration: none;
     font-family: 'Shadows Into Light Two', cursive;
+    text-align: justify;
     font-weight: bold;
     font-size: 28px;
     color: rgb(51, 41, 55);
     padding: 10px;
     margin: 0px 25px;
+    cursor: pointer;
 }
 
 .links:hover{
