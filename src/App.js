@@ -7,6 +7,8 @@ import Form from './components/Form/Form'
 import Favorite from './components/Favorite/Favorite'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+axios.defaults.baseURL = 'http://localhost:3001/'
+
 
 
 function App() {
